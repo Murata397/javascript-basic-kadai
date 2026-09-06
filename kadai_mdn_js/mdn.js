@@ -1,4 +1,4 @@
-const event = new Date("september 6, 2026 23:51:30");
+const event = new Date();
 
 console.log(
   event.toLocaleDateString("ja-JP", {
