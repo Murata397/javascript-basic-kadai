@@ -1,2 +1,9 @@
-console.log(new Date(8.64e15).toString()); // "Sat Sep 13 275760 00:00:00 GMT+0000 (Coordinated Universal Time)"
-console.log(new Date(8.64e15 + 1).toString()); // "Invalid Date"
+const event = new Date("september 6, 2026 23:51:30");
+
+console.log(
+  event.toLocaleDateString("ja-JP", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  })
+);
